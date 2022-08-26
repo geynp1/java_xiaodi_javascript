@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var car = new Object();
+        // car.color = 'red';
+        // car.height = 1.8;
+        // console.log(car);
+
+        // var car1={
+        //     color:'red',
+        //     height:1.8,
+        //     suv:true,
+        // }
+        // var car2={
+        //     color:'blue',
+        //     height:1.2,
+        //     suv:false,
+        // }
+
+        function Factory(color,height,suv){
+            this.color = color;
+            this.height = height;
+            this.suv = suv;
+        }
+
+        var car1 = new Factory('red',1.8,true);
+        console.log(car1);
+
+        var car2 = new Factory('blue',1.2,false);
+        console.log(car2);
+    </script>
+</body>
+</html>
