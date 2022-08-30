@@ -8,17 +8,25 @@
 </head>
 <body>
     <script>
-        function Car(name,price,size) {
-            this.name = name;
-            this.price = price;
-            this.size = size;
+        // function Car(name,price,size) {
+        //     this.name = name;
+        //     this.price = price;
+        //     this.size = size;
+        // }
+
+        // var benc = new Car('benc','40w','big');
+        // console.log(benc);
+
+        // var audi = new Car('30w','audi','small');
+        // console.log(benc);
+        function Car(obj) {
+            this.name = obj.name;
+            this.price = obj.price;
+            this.size = obj.size;
         }
 
-        var benc = new Car('benc','40w','big');
-        console.log(benc);
-
-        var audi = new Car('30w','audi','small');
-        console.log(benc);
+        var audi= new Car({size:'small',name:'audi',price:'30w'});
+        console.log(audi);
     </script>
 </body>
 </html>
