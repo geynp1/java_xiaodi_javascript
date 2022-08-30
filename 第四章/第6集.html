@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        // function xd() {
+        //     return 1;//不加return返回undefined
+        // }
+        // console.log(xd());
+    //   function Student(obj) {
+    //     this.name = obj.name;
+    //     this.score = obj.score;
+    //     this.grade = obj.grade;
+    //     console.log(this);
+    //   }
+    //   var stu1 =Student({
+    //     name: "Jack",
+    //     score: 88,
+    //     grade: 3,
+    //   });
+    //   console.log(stu1);
+
+    function Student(obj) {
+        //this={}
+        this.name = obj.name;
+        this.score = obj.score;
+        this.grade = obj.grade;
+        // return this
+      }
+      var stu1 =new Student({
+        name: "Jack",
+        score: 88,
+        grade: 3,
+      });
+      console.log(stu1);
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //浅拷贝
+        // var a = { age:18 };
+        // var b = a;
+        // console.log(a,b);
+        // a.age=20;
+        // console.log(a,b);
+        //深拷贝
+        console.log(JSON.stringify({name:'li'}));
+        console.log(JSON.parse(JSON.stringify({name:'li'})));
+        var a = { age:18 };
+        var b = JSON.parse(JSON.stringify(a));
+        a.age=10;
+        console.log(a,b);
+
+    </script>
+</body>
+</html>
