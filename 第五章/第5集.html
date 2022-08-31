@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   var str = 张三,李四,小明,小红;
+      //   var list = str.
+
+      // 排好序的数组
+      //   var list = [23, 32, 45, 53, 62, 68];
+      //   // 插⼊的是44 则插⼊到32和45之间
+      //   // 提示 splice
+      //   var num = 32;
+      //   var index = null;
+      //   for (var i = 0; i < list.length; i++) {
+      //     if (list[i] = num) {
+      //       index = i;
+      //       console.log(list[i]);
+      //     }
+      //   }
+      //   list.splice(index,0,44);
+      //   console.log(list);
+
+      //   var str = "张三,李四,小明,小红";
+      //   var list = str.split(",");
+      //   console.log(list);
+      //   var index = list.indexOf("李四");
+      //   console.log(index);
+      //   list.splice(1, 1);
+      //   console.log(list);
+
+      // 排好序的数组
+      var list = [23, 32, 45, 53, 62, 68];
+      // 插⼊的是44 则插⼊到32和45之间
+      // 提示 splice
+      var num = 44;
+      var index = null;
+      for (var i = 0; i < list.length; i++) {
+        if (list[i] < num) {
+          index = i;
+        }
+      }
+      console.log(index);
+      list.splice(2, 0, num);
+      console.log(list);
+    </script>
+  </body>
+</html>
