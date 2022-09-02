@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. 1-100的7的倍数和
+        var sum = 0;
+        for(var i =1;i<=100;i++){
+            if(i%7==0){
+                sum +=i;
+            }
+        }
+        console.log(sum);
+
+        //2.输出以下图形
+        for(var i=0;i<4;i++){
+            document.write( '*****<br/>' )
+        }
+        //2.2 使⽤两个for循环输出⼀下图形
+        
+        for (i=0;i<5;i++){
+            for(var j=4;j>0;j--){
+                document.write( '*'+'' )
+            }
+            document.write( '<br/>' )
+        }
+    </script>
+</body>
+</html>
