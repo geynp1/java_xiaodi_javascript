@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function Person() {
+      //     this.name = "李四";
+      //     this.say = function () {
+      //         console.log('hi');
+      //     }
+      //   }
+      //   Person.prototype.name = "张三";
+      //   Person.prototype.say = function () {
+      //     console.log("hello");
+      //   };
+      //   var person1 = new Person();
+      //   console.log(person1.name);//李四
+      //   person1.say();
+
+      function Person() {
+        this.name = "李四";
+      }
+      Person.prototype.say = function () {
+        console.log("hello");
+      };
+      var person1 = new Person();
+      console.log(person1.name); //李四
+      person1.say();
+    </script>
+  </body>
+</html>
