@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    原型是function对象的⼀个属性，它定义了构造函数制造出的对象的公共祖先，
+    通过该构造函数产⽣的对象，可以继承该原型的属性和⽅法，原型也是对象
+    */
+
+    Person.prototype.lastName='刘'
+    function Person() {
+        
+    }
+
+    var person1 = new Person();
+    var person2 = new Person();
+
+    console.log(person1);
+    console.log(person1.lastName);
+    console.log(person2.lastName);
+    </script>
+</body>
+</html>

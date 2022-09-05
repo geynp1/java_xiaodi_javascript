@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function xd(a,b) {
+            return a +b;
+        }
+        console.log(xd(1,2));
+
+        var xd2= function test(a,b) {
+            return a + b;
+        }
+        console.log(xd2(1,2));
+
+        var xd3= new Function('a','b','return a+b');
+        console.log(xd3(1,2));
+
+        function xd4() {
+            console.log(111);
+        }
+        xd4();
+    </script>
+</body>
+</html>

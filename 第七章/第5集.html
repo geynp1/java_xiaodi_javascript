@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = "全局变量";
+      //   console.log(window.a);
+      /*
+    window{
+        a:'全局变量',
+        document.write
+    }
+    控制台可以直接访问全局变量
+       */
+
+      //    function father() {
+      //     console.log(a);
+      //    }
+      //    father();
+
+      //   function father() {
+      //     function son() {
+      //       console.log(a);
+      //     }
+      //     son();
+      //   }
+      //   father();
+
+      // function father() {
+      //     var b ='局部变量';
+      //     function son() {
+
+      //     }
+      //     son();
+      //    }
+      //    console.log(b);
+      //    father();
+
+      // function father() {
+      //     var b ='局部变量';
+      //     function son() {
+      //         console.log(b);
+      //     }
+      //     son();
+      //    }
+      //    father();
+
+      function father() {
+      console.log(c);
+        function son() {
+          var c = "111";
+        }
+        son();
+      }
+      father();
+    </script>
+  </body>
+</html>
