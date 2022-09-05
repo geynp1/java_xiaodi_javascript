@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Car() {
+            this.lastName='李四';
+        }
+
+        var car = new Car();
+        Car.prototype.lastName ='张三';
+        console.log(Car.prototype.lastName);
+        console.log(car.prototype);
+        console.log({});
+        
+        console.log(car.lastName);
+
+        console.log(car);
+    </script>
+</body>
+</html>
