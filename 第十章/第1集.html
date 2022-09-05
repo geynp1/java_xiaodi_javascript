@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var obj = {
+        name: "张三",
+        age: "18",
+      };
+
+      var a = JSON.stringify(obj);//序列化，转换成JSON格式
+      var b = JSON.parse(a);//反序列化，转换成对象格式
+      console.log(a);
+      console.log(typeof a);
+      console.log(b);
+    </script>
+  </body>
+</html>
