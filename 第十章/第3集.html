@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //创建对象
+      var xhr;
+      if (window.XMLHttpRequest) {
+        xhr = new XMLHttpRequest();
+      } else {
+        // code for IE6, IE5 兼容
+        xhr = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+
+      //设置请求方式还有
+      xhr.open("GET", "https://api-v2.xdclass.net/api/rank/v1/hot_product");
+
+      //发起请求
+      xhr.send();
+
+      //注册事件
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            alert(xhr.responseText);
+          } else {
+            alert("出错了，Err:" + xhr.status);
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
