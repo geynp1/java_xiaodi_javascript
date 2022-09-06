@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="xd">小滴课堂</h1>
+      <p class="wangzhi">xdclass.net</p>
+      <p class="wangzhi">教育机构</p>
+    </div>
+    <script>
+        // var xd = document.getElementById('xd');
+        // console.log(xd);
+
+        // var wangzhi = document.getElementsByClassName('wangzhi')[0];
+        // console.log(wangzhi);
+
+        // var p = document.getElementsByTagName('p')[1];
+        // console.log(p);
+
+        // var xd2 = document.querySelector('#xd');
+        // var xd3 = document.querySelector('.wangzhi');
+        // var xd4 = document.querySelectorAll('.wangzhi');
+        // console.log(xd2);
+        // console.log(xd3);
+        // console.log(xd4);
+
+        var xd = document.getElementById('xd');
+        // xd.innerHTML='xdkt';
+        // xd.innerText='xdkt';
+        // xd.outerHTML='xdkt';
+        // xd.outerText='xdkt';
+
+        // xd.id = 'xd1';
+        xd.style.backgroundColor='red';
+        xd.style.color='#fff';
+
+        var div = document.createElement('div');
+        div.innerHTML='我是新内容';
+        // document.body.append(div);
+        xd.append(div);
+
+    </script>
+  </body>
+</html>

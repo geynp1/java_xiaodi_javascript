@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="father">
+      我是一个列表
+      <li id="son">第1个</li>
+      
+    </ul>
+    <script>
+      //冒泡
+      // document.getElementById('father').onclick=function(){
+      //     console.log('点击了父元素');
+      // }
+      // document.getElementById('son').onclick=function(){
+      //     console.log('点击了子元素');
+      // }
+
+      //捕获
+      // document.getElementById('father').addEventListener('click',function () {
+      //     console.log('点击了父元素');
+      // },true);
+      // document.getElementById('son').onclick=function(){
+      //     console.log('点击了子元素');
+      // }
+
+      //事件代理
+      //   document.getElementById("father").addEventListener(
+      //     "click",
+      //     function (e) {
+      //       if (e.target.textContent === "第4个") {
+      //         console.log("111");
+      //       }
+      //       console.log(e);
+      //     },
+      //     true
+      //   );
+
+      //阻止
+      document.getElementById("father").addEventListener("click", function (e) {
+        console.log(111);
+      });
+      document.getElementById("son").addEventListener("click", function (e) {
+        console.log(222);
+        e.stopPropagation();
+      });
+    </script>
+  </body>
+</html>

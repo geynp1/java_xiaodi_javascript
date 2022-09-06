@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div onclick="test()" id="xd">小滴课堂</div>
+    <br />
+    <div class="wangzhi">xdclass.net</div>
+    <script>
+      //元素属性
+      function test() {
+        console.log("我点击了");
+      }
+
+      //监听
+      var wangzhi = document.getElementsByClassName("wangzhi")[0];
+      //   wangzhi.addEventListener('click',function () {
+      //     console.log('我点击了网址');
+      //   });
+
+      function test1() {
+        console.log("我点击了网址1");
+      }
+      wangzhi.addEventListener("click", test1);
+      // wangzhi.removeEventListener('click',test1);
+
+      document.getElementById("xd").onclick = function () {
+        console.log("我点击了1");
+      };
+
+      wangzhi.addEventListener("click", function () {
+        console.log("我点击了网址2");
+      });
+      wangzhi.addEventListener("click", function () {
+        console.log("我点击了网址3");
+      });
+      wangzhi.addEventListener("mouseover", function () {
+        console.log("我移动到了网址3");
+      });
+    </script>
+  </body>
+</html>
