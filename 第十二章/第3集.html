@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // console.log(new Date());
+      console.log(new Date().getTime());
+      // 保存cookie
+      window.onload=function(){
+        checkCookie();
+      }
+      function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + ";" + expires;
+      }
+
+      // 获取cookie
+      function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(";"); // 将多个cookie字符串以;分割数组;
+        for (var i = 0; i < ca.length; i++) {
+          if (ca[i].indexOf(name) >= 0) {
+            return ca[i].split("=")[1];
+          }
+        }
+        return "";
+      }
+
+      //
+      function checkCookie() {
+        var user = getCookie("username");
+        if (user) {
+          alert("欢迎 " + user + " 再次访问");
+        } else {
+          user = prompt("请输⼊你的名字:", "");
+          if (user) {
+            setCookie("username", user, 30);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
